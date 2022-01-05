@@ -6,16 +6,18 @@ body{
 
 .calculatorArea{
     width: 320px;
-    height: 540px;
+    height: 560px;
     background-color: #eaedef;
-    margin: 20px auto;
-    top: 20px;
+    margin-left: 750px;
+    top: 22px;
     position: relative;
     border-radius: 10px;
 }
 
 .result{
     height: 120px;
+    background-color: rgb(37, 37, 37);
+    border-radius: 10px;
 }
 
 .history{
@@ -24,7 +26,7 @@ body{
     margin: 0 20px;
     padding-top: 20px;
     font-size: 16px;
-    color: #7c7c7c;
+    color: #bdbdbd;
 }
 
 .output{
@@ -32,10 +34,12 @@ body{
     height: 60px;
     margin: 10px 20px;
     font-size: 30px;
+    color: white;
 }
 
 .input-area{
     height: 400px;
+    margin-top: 20px;
 }
 
 .operator, .number, .empty{
@@ -48,6 +52,11 @@ body{
     font-weight: bold;
     font-size: 16px;
     font-family: 'poppins';
+    transition: transform 0.5s, filter 0.5s ease-in-out;
+}
+
+.operator:hover, .number:hover{
+    transform: scale(1.2);
 }
 
 .operator{
@@ -122,3 +131,45 @@ button:nth-child(20){
     color: white;
 }
 
+.textArea{
+    position:fixed;
+    margin-left: 200px;
+    margin-top: 80px;
+}
+
+.textArea h1{
+    font-size: 60px;
+    color: rgb(255, 255, 255);
+}
+
+.textArea p{
+    font-size: 21px;
+    color: rgb(0, 0, 0);
+    margin-top: 60px;
+    text-align: center;
+}
+
+li{
+    margin-left: 20px;
+	border:1px solid rgb(255, 187, 0);
+    border-radius: 50%;
+	display: inline-block;
+    background-color: rgb(255, 187, 0);
+}
+
+.textArea .fa{
+    padding: 10px;
+    text-align: center;
+	height: 20px;
+    width: 20px;
+}
+
+a{
+	display: block;
+    color: white;
+    transition: transform 0.5s, filter 0.5s ease-in-out;
+}
+
+a:hover{
+    transform: scale(1.5);
+}
