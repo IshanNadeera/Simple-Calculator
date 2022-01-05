@@ -64,7 +64,7 @@ for(var i = 0; i < operator.length; i++){
                 if(this.id == "="){
                     var result = eval(history);
                     printOutput(result);
-                    printHistory("");
+                    printHistory(history);
                 }
 
                 else{
