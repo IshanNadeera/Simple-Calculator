@@ -132,7 +132,7 @@ button:nth-child(20){
 }
 
 .textArea{
-    position:fixed;
+    position:absolute;
     margin-left: 200px;
     margin-top: 80px;
 }
@@ -201,6 +201,50 @@ a:hover{
     
     li{
         margin-left: 50px;
+    }
+    
+}
+
+@media (max-width: 375px) {
+    
+    .calculatorArea{
+        margin-left: 20px;
+        top: 80px;
+        position: relative;
+        border-radius: 10px;
+    }
+
+    .textArea{
+        margin-left: 90px;
+        margin-top: -10px;
+        text-align: center;
+    }
+    
+    .textArea h1{
+        font-size: 20px;
+    }
+    
+    .textArea p{
+        font-size: 13px;
+        text-align: center;
+        margin-top: 610px;
+    }
+    
+    li{
+        margin-top: -20px;
+        margin-bottom: 20px;
+        margin-left: 5px;
+    }
+
+    .textArea .fa{
+        padding: auto;
+        text-align: center;
+        height: 15px;
+        width: 15px;
+    }
+
+    a:hover{
+        transform: scale(1.2);
     }
     
 
